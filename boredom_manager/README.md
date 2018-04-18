@@ -4,27 +4,37 @@
 ## To do
 
 `Feature 1: Basic user functionality`
+> Users can create a profile, login, create activities, add friends, get recommended activities
 
 1. Users Controller 
 	- Gem: Devise? 
+	- geolocation: what are others located / what are others doing rn? 
 1. Users Model
     - first_name 
     - last_name
     - location
 
 1. Activities Controller
-	- What are others doing rn?  geolocation gem
+	- 
 
 1. Activities Model
-	- Length of activity
+	- Duration
 
-1. Friendships 
+1. Friendships Controller
+1. Friendships Model
 
+`Feature 2: External Interactions`
 
-`Feature 2: ??`
+> Users can rate activities, add reviews, upload pictures, share on their social media accounts
+
+1. Ratings Controller
+1. Ratings Model
+1. Reviews Model 
+1. Reviews Controller
+1. Upload / share? 
+
 
 --- 
-
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
