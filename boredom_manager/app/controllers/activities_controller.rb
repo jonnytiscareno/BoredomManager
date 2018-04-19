@@ -3,6 +3,10 @@ class ActivitiesController < ApplicationController
     @all_activities = Activity.all
   end
 
+  def show
+    @all_activities = Activity.all
+  end 
+
   def new
     @activity = Activity.new
   end
@@ -24,7 +28,7 @@ class ActivitiesController < ApplicationController
 
   private
   def activity_params
-    params.require(:activity).permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
+    params.require(:activity).permit(:name, :length, :description)# permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
   end
 
 end

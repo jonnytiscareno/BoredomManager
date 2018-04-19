@@ -1,0 +1,14 @@
+
+
+<% @all_activities.each do |t| %>
+
+  Name: <%= t.name %><br>
+
+  Length: <%= t.length %><br>
+
+  <% if t.description!= "" %>
+    Description: <%= t.description %><br>
+  <%else%>
+    Notes: NONE<br>
+  <% end %>
+<% end %>
