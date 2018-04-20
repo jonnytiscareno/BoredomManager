@@ -1,14 +1,20 @@
 class ActivitiesController < ApplicationController
+  
   def index
-   #  @all_activities = Activity.all
+
   end
 
   def get
 
-      @given_time = Integer(params[:length])
-      @chosen_activity = Activity.where(:length < @given_time)
+      @given_time = params[:length].to_i
+      @chosen_activity = Activity.where('length > ?', @given_time).take# .first
+      puts 5555555
+      puts @chosen_activity
+      puts 44444
+      puts @given_time
       # redirect_to activities_
-      redirect_to new_activity_path
+      # @activity = Activity.new
+      render :index
     end
 
   def show
