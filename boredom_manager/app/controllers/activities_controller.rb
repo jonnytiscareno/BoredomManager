@@ -3,6 +3,14 @@ class ActivitiesController < ApplicationController
    #  @all_activities = Activity.all
   end
 
+  def get
+
+      @given_time = Integer(params[:length])
+      @chosen_activity = Activity.where(:length < @given_time)
+      # redirect_to activities_
+      redirect_to new_activity_path
+    end
+
   def show
     @all_activities = Activity.all
   end 

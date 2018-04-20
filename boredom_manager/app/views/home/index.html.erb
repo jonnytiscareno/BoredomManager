@@ -1,5 +1,22 @@
 <h3>Welcome to Boredom Manager</h3>
 
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:length, "How long do you have? ") %>
+  <%= text_field_tag(:length) %>
+  <%= submit_tag("Go!") %>
+<% end %>
+
+
+<!-- <%= simple_form_for @activity do |f| %>
+	
+	<%= f.input :length %>
+
+	<%= f.button :submit, class: "create-pokemon-btn" %>
+
+<% end %> --> 
+
+
 <p><%= link_to "Add an Activity", new_activity_path, class: "btn btn-large btn-realto " %></p>
 
 <p><%= link_to "See activities", activities_show_path, class: "btn btn-large btn-realto " %></p>
