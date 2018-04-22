@@ -3,23 +3,28 @@
 
 ## To do
 
+1. Allow users to customize their profiles 
+   - add Location to database
+   - each unique user should be able see their unique list of activities
+   - add dummy users to seed file 
+1. for each unique activity page have option to upload pictures: see paperclip gem (https://www.youtube.com/watch?v=Z5W-Y3aROVE) 
+1. Geolocation gem? 
+
+---
+
 `Feature 1: Basic user functionality`
 > Users can create a profile, login, create activities, add friends, get recommended activities
 
 1. Users Controller 
-	- Gem: Devise? 
 	- geolocation: what are others located / what are others doing rn? 
+
 1. Users Model
     - first_name 
     - last_name
     - location
 
 1. Activities Controller
-	- 
-
 1. Activities Model
-	- Duration
-
 1. Friendships Controller
 1. Friendships Model
 
@@ -32,7 +37,6 @@
 1. Reviews Model 
 1. Reviews Controller
 1. Upload / share? 
-
 
 --- 
 
