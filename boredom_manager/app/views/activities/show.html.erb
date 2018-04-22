@@ -1,9 +1,8 @@
 
 <% @all_activities.each do |t| %>
 
+ <p> </p>
   Name: <%= t.name %><br>
-
-  <p> </p>
 
   Length: <%= t.length %><br>
 
@@ -11,5 +10,9 @@
     Description: <%= t.description %><br>
   <%else%>
     Notes: NONE<br>
+
+  <p> </p>
+
   <% end %>
+
 <% end %>

@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-[['Go laser tagging', 60, 'pew'], ['Give someone a compliment', 1, 'you look nice'], ['Bulbasaur', 1, 100], 
- ['plan a tree', 25, 'save the earth']].each do |name, len, descrip|
+[['Go laser tagging', 60, 'pew'], ['Give someone a compliment', 1, 'nice smile'], 
+ ['plant a tree', 25, 'save the earth']].each do |name, len, descrip|
   Activity.create(
     name: name,
     length: len,
