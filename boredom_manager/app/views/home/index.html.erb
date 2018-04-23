@@ -8,6 +8,8 @@
   <%= submit_tag("Go!") %>
 <% end %>
 
+<p><%= link_to "See All Activities", activities_show_path, class: "btn btn-large btn-realto " %></p>
+
 <% if user_signed_in? %>
 
 	<p><%= link_to "Add an Activity", new_activity_path, class: "btn btn-large btn-realto " %></p>

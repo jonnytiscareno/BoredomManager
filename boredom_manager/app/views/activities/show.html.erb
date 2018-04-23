@@ -7,19 +7,31 @@
 	<th> Activity </th>
 	<th> Length (Minutes) </th>
 	<th> Description </th>
+	<th> User </th>
 
 </tr>
 
 
 <tbody>
-	<% @all_activities.each do |t| %>
+	<% @all_activities.each do |a| %>
 		<tr>
-			<td> <%= t.name %> </td>
-			<td> <%= t.length %> </td>
-			<td> <%= t.description %> </td>
+			<td> <%= a.name %> </td>
+			<td> <%= a.length %> </td>
+			<td> <%= a.description %> </td>
+
+			<% if a.user %> 
+				<td> <%= a.user.email %> </td>
+			<% else %> 
+				<td> None </td>
+			<% end %> 
+
+
+
 		</tr>
 	  <% end %>
 </tbody>
+
+</table>
 
 
 

@@ -35,9 +35,11 @@ class ActivitiesController < ApplicationController
     @activity = current_user.activities.build(activity_params)
     if @activity.save
       redirect_to root_path
+      # redirect_to root_path
     else
       redirect_to new_activity_path
     end
+
 
   end
 

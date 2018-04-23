@@ -5,9 +5,10 @@
 
 1. Geolocation
 1. Allow users to customize their profiles 
-   - each unique user should be able see their unique list of activities
-   - add dummy users to seed file 
-   - how to use foreign keys?
+   - add username
+   - add dummy users & activities to seed file 
+   - how to use foreign keys? / before_action :authenticate_trainer!
+   - what was the point of @trainer = Trainer.find(params[:id])? 
 
 ### To do
 

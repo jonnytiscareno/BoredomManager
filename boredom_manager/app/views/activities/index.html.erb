@@ -1,9 +1,28 @@
 
-<%= render partial: "partial", locals: {activity: @chosen_activity} %>
+<h1> My Activities </h1>
+
+<table>
+<tr>
+	<th> Activity </th>
+	<th> Length (Minutes) </th>
+	<th> Description </th>
+
+</tr>
+
+<tbody>
+	<% current_user.activities.each do |a| %> 
+
+	<tr>
+
+	<td> <%= a.name %> </td>
+	<td> <%= a.length %> </td>
+	<td> <%= a.description %> </td>
+	
+	</tr>
 
 
-<p><%= link_to "Add an Activity", new_activity_path, class: "btn btn-large btn-realto " %></p>
+<% end %> 
 
+</tbody>
 
-
-
+</table>
