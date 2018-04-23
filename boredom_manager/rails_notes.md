@@ -35,6 +35,7 @@
 		
  	- **validations:** verify certain values are passed in
 1. rails db:reset, db:seed
+1. rails g migration
 
 --- 
 ### Controllers

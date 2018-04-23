@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/activities/show', to: 'activities#show'
   get '/search', to: 'activities#get'
+  # get '/users/sign_out', to: 'sessions#destroy'
   # get '/'
 
 end

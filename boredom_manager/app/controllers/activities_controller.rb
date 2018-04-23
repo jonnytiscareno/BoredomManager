@@ -21,12 +21,12 @@ class ActivitiesController < ApplicationController
   end 
 
   def new
-
-    if @current_user
-      @activity = current_user.activities.build
-    else
-      @activity = Activity.new
-    end 
+    @activity = current_user.activities.build
+    # if @current_user
+    #   @activity = current_user.activities.build
+    # else
+    #   @activity = Activity.new
+    # end 
   
   end
 
