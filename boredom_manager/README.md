@@ -3,12 +3,21 @@
 
 ## To do
 
+1. Geolocation
 1. Allow users to customize their profiles 
-   - add Location to database
    - each unique user should be able see their unique list of activities
    - add dummy users to seed file 
+   - how to use foreign keys?
+
+### To do
+
+1. front end styling 
 1. for each unique activity page have option to upload pictures: see paperclip gem (https://www.youtube.com/watch?v=Z5W-Y3aROVE) 
-1. Geolocation gem? 
+
+### Links
+
+1. https://stackoverflow.com/questions/804961/how-do-i-use-css-with-a-ruby-on-rails-application 
+1. https://github.com/plataformatec/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
 
 ---
 
