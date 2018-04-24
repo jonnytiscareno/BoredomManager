@@ -1,1 +1,0 @@
-//= require "skyline.editor/src/skyline.editor.js"
