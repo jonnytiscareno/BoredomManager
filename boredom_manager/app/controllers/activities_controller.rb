@@ -10,7 +10,7 @@ class ActivitiesController < ApplicationController
       @chosen_activity = Activity.where('length > ?', @given_time).take# .first
       puts @chosen_activity
       puts @given_time
-      render :index
+      render :random_index
 
     end
 

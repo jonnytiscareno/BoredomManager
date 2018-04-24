@@ -11,6 +11,7 @@
    - what was the point of @trainer = Trainer.find(params[:id])? 
    - hyperlink activities
    - what is the arrow in rails? 
+   - flash successful saving of location
 
 1. other
 	- before_action :authenticate_trainer!
