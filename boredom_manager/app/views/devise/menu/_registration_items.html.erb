@@ -7,6 +7,9 @@
   <%= link_to('My Activities', activities_path) %>
   </li>
 
+  <li>
+  <%= link_to('Update Profile', users_update_path(current_user), :method=> :patch) %>
+  </li>
 
 <% else %>
   <li>

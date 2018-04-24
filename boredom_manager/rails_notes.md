@@ -14,7 +14,7 @@
 	- must pass hash as argument (dictionary)
 	- uninitialized controller means something doesn't exist (probably named something wrong)
 	- undefined method `activities' for nil:NilClass, it's not that the method isn't defined but object is referring to nil
-
+	
 1. Debugging
 	- Use the terminal window inside the error message
 	- Use print statements (put command)
@@ -28,6 +28,7 @@
 		- e.g. trainer has-many pokemon gives access to a trainers.Pokemons 
 		- associations must happen at both models
 		- database level (:pokemons)
+		- belongs_to, has_one, has_many, has_many :through, has_one :through, has_and_belongs_to_many
 	
 	- **foreign keys:** 
 		- A field in one table that uniquely identifies a row of another
@@ -51,6 +52,7 @@ index for all objects | show for an individual object
 
 1. Notes:
 	- 7 default routes are resourceful routes, resource = class 
+	- index, new, create, show, edit, update, destroy
 	- member route: editing single resource
 	- collection route: edit entire class
 1. GET request from user clicking on a link is processed by the show method of UsersController, can access id from params: params[:id] = 15

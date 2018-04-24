@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :activities
   resources :locations
+  resources :users
+
   get '/activities/show', to: 'activities#show'
   get '/search', to: 'activities#get'
-  # get '/users/sign_out', to: 'sessions#destroy'
-  # get '/'
+  patch '/users/:id/update', to: 'users#update', as: '/users/update'
+  patch '/users/:id/updateLoc', to: 'users#update_location', as: '/users/updateLoc'
 
 end

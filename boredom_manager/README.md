@@ -3,17 +3,21 @@
 
 ## To do
 
-1. Geolocation
 1. Allow users to customize their profiles 
    - add username
    - add dummy users & activities to seed file 
-   - how to use foreign keys? / before_action :authenticate_trainer!
+   - how to use foreign keys? 
+   - joint associations? 
    - what was the point of @trainer = Trainer.find(params[:id])? 
+   - hyperlink activities
+   - what is the arrow in rails? 
 
-### To do
+1. other
+	- before_action :authenticate_trainer!
 
-1. front end styling 
+1. front end styling - Bootstrap framework? / where to include ess
 1. for each unique activity page have option to upload pictures: see paperclip gem (https://www.youtube.com/watch?v=Z5W-Y3aROVE) 
+
 
 ### Links
 
