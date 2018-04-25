@@ -13,4 +13,8 @@
     length: len,
     description: descrip,
   )
-end
+	end 
+
+%w(Dipper Mabel Soos GrunkleStan).each do |name|
+  User.create(username: name, email: name+"@mysteryshack.com", password: 'password', location: 'Gravity Falls')
+	end

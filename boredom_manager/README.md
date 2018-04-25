@@ -1,6 +1,17 @@
 ## BOREDOM MANAGER
 > Get suggestions on how to spend your time 
 
+Feature 1: Basic user functionality
+	- Users can create an account & customize their profiles 
+	- Users can create their own activities and get recommended activities
+	- Users can add friends
+	- Users can form & join groups 
+Feature 2: External interactions
+	- Geolocation: user can view what others are doing at current time / can view where others are located
+	- Users can rate activities created by others and add reviews to activities
+	- Users can upload pictures either on the website or integrate with their social media accounts and share from there
+
+
 ## To do
 
 1. create button to homepage (header)
