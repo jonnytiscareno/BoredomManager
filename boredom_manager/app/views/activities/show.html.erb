@@ -71,6 +71,25 @@ body {margin:0;height:2000px;}
 
 <h1> Listing Activities </h1>	
 
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
 <table>
 
 <tr>
@@ -79,9 +98,10 @@ body {margin:0;height:2000px;}
 	<th> Description </th>
 	<th> User </th>
   <th> Category </th>
+  <th> Images </th> 
 
 </tr>
-
+</style>
 
 <tbody>
 	<% @all_activities.each do |a| %>
@@ -97,7 +117,7 @@ body {margin:0;height:2000px;}
 			<% end %>
       <td> <%= a.category %> </td>
 
-
+      <td> <%= image_tag a.image.url(:thumb) %> </td>  
 
 		</tr>
 	  <% end %>

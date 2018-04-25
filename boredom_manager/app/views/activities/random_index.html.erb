@@ -1,8 +1,9 @@
 
 
 <h2> Specific Activity </h2>
-
+<%= image_tag @chosen_activity.image.url(:medium) %>
 <p> <%= @chosen_activity.name %> </p>
+<!-- <p> <%= social_share_button_tag() %> </p> -->
 <p> <%= @chosen_activity.length %> </p>
 <p> <%= @chosen_activity.description %> </p>
 

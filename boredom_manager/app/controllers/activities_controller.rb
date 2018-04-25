@@ -52,7 +52,7 @@ class ActivitiesController < ApplicationController
 
   def activity_params
 
-    params.require(:activity).permit(:name, :length, :description, :category)# permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
+    params.require(:activity).permit(:name, :length, :description, :category, :image)# permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
   
   end
 
