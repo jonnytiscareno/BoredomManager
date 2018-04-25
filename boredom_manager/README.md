@@ -6,28 +6,30 @@
 
 	- [x] Users can create an account & customize their profiles 
 	- [x] Users can create their own activities and get recommended activities
-	- [ ] Users can add friends
-<strike> Users can form & join groups </strike> 
+	- [ ] Users can rate and review
 
+<strike> Users can form & join groups </strike> 
+<strike> Users can add friends </strike> 
 
 `Feature 2: External interactions`
 
 	- [?] Geolocation: user can view what others are doing at current time / can view where others are located
-	- [ ] Users can rate activities created by others and add reviews to activities
-	- [ ] Users can upload pictures either on the website or integrate with their social media accounts and share from there
+	- [x] Users can upload pictures
+	- [x] Users can share whether they completed an activity on fb
 
 
 ## To do
 
 1. hyperlink activities? 
+1. fix social media share bar 
 1. add username to profiles
-1. add dummy users & activities to seed file & location
-1. flash successful saving of location
+1. populate seed file to include additional activities & categories in proper format
+1. flash error not showing up? 
 
 1. misc
   - before_action :authenticate_trainer!
   - what was the point of @trainer = Trainer.find(params[:id])? 
-  - what is the arrow in rails? ; what is the @ symbol ding?
+  - what is the arrow in rails? 
 
 1. front end styling - Bootstrap framework? / where to include css
 	- https://stackoverflow.com/questions/804961/how-do-i-use-css-with-a-ruby-on-rails-application  
