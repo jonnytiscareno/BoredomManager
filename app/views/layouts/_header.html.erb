@@ -1,49 +1,6 @@
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-      <%= link_to "Get Recommendations (Home) ", root_path, class: "brand" %>
-</div>
-
-
-</body>
-</html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,6 +52,7 @@ body {
   <button class="dropbtn">Account</button>
   <% if user_signed_in? %>
     <div class="dropdown-content">
+    	      <%= link_to "Get Recommendations (Home) ", root_path, class: "brand" %>
   <%= link_to('Edit registration', edit_user_registration_path) %>
   <%= link_to('My Activities', activities_path) %>
   <%= link_to('Update Profile', users_update_path(current_user), :method=> :patch) %>
@@ -102,12 +60,16 @@ body {
   </div>
 <% else %>
   <div class="dropdown-content">
+  	      <%= link_to "Get Recommendations (Home) ", root_path, class: "brand" %>
   <%= link_to('Register', new_user_registration_path)  %>
     <%= link_to('Login', new_user_session_path)  %>  
   </div>
 <% end %>
 </div>
 
+
 </body>
 </html>
+
+
 
