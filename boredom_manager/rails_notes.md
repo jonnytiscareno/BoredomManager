@@ -13,8 +13,8 @@
 1. Error messages:
 	- must pass hash as argument (dictionary)
 	- uninitialized controller means something doesn't exist (probably named something wrong)
-	- undefined method `activities' for nil:NilClass, it's not that the method isn't defined but object is referring to nil
-	
+	- undefined method `activities` for nil:NilClass, it's not that the method isn't defined but object is referring to nil
+
 1. Debugging
 	- Use the terminal window inside the error message
 	- Use print statements (put command)
@@ -51,6 +51,10 @@ Methods:
 Index |  show
 ------|--------
 index for all objects | show for an individual object
+
+Variable names
+	- title is a local variable. They only exists within its scope (current block)
+	- @title is an instance variable - and is available to all methods within the class.
 
 --- 
 ### ROUTING

@@ -21,14 +21,15 @@
 ## To do
 
 1. hyperlink activities? 
+1. fix social media share bar 
 1. add username to profiles
-1. populate seed file to include additional activities in proper format
-1. flash successful saving of location
+1. populate seed file to include additional activities & categories in proper format
+1. flash error not showing up? 
 
 1. misc
   - before_action :authenticate_trainer!
   - what was the point of @trainer = Trainer.find(params[:id])? 
-  - what is the arrow in rails? ; what is the @ symbol ding?
+  - what is the arrow in rails? 
 
 1. front end styling - Bootstrap framework? / where to include css
 	- https://stackoverflow.com/questions/804961/how-do-i-use-css-with-a-ruby-on-rails-application  

@@ -5,11 +5,17 @@ class ActivitiesController < ApplicationController
   end
 
   def get
-      @given_time = params[:length].to_i
-      @chosen_activity = Activity.where('length == ?', @given_time).take# .first
-      puts @chosen_activity
-      puts @given_time
-      render :random_index
+      given_time = params[:length].to_i
+      start_range = given_time - 10
+      end_range = given_time + 10
+      @chosen_activity = Activity.where(length: start_range..end_range).take
+      # Activity.where('length == ?', given_time).first
+      if @chosen_activity
+        render :random_index
+      else
+        flash[:error] = "Unable to find activity in that range"
+        redirect_to root_path
+      end
     end
 
   def show
