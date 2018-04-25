@@ -1,5 +1,7 @@
-## BOREDOM MANAGER
+## [BOREDOM MANAGER](https://boredom-manager.herokuapp.com/)
 > Get suggestions on how to spend your time 
+> 
+> https://boredom-manager.herokuapp.com/ 
 
 
 `Feature 1: Basic user functionality`
@@ -24,6 +26,7 @@
 	- difference between `heroku local`  & `rails server`
 	- free tier enough for what? 
 	- once you push the local changes can check w/ `heroku open`
+	- `heroku run rails db:migrate`
 1. hyperlink activities? 
 1. fix social media share bar  
 1. add username to profiles

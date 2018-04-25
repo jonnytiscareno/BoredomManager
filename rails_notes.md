@@ -18,7 +18,21 @@
 1. Debugging
 	- Use the terminal window inside the error message
 	- Use print statements (put command)
+	- inspect element & record log
 
+1. deploying to heroku
+	- `heroku create _name_`
+	- commit the file to git
+	- `git push heroku master`? 
+	- `heroku run rails db:migrate`
+
+1. error: `No default language could be detected for this app`
+	- `heroku buildpacks:set heroku/ruby`
+	- error: `App not compatible with buildpack`
+	- replace sqlite3: http://curriculum.railsbridge.org/intro-to-rails/deploying_to_heroku
+		- **remove the postgres gem & replace with `gem 'pg', '~> 0.18'`** 
+		- `bundle install --without production`
+	- **remark** if you're not on master then you have to do: `git push heroku test_heroku:master`
 
 
 ## Concepts
