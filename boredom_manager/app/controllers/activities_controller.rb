@@ -5,13 +5,11 @@ class ActivitiesController < ApplicationController
   end
 
   def get
-
       @given_time = params[:length].to_i
-      @chosen_activity = Activity.where('length > ?', @given_time).take# .first
+      @chosen_activity = Activity.where('length == ?', @given_time).take# .first
       puts @chosen_activity
       puts @given_time
       render :random_index
-
     end
 
   def show
@@ -54,7 +52,7 @@ class ActivitiesController < ApplicationController
 
   def activity_params
 
-    params.require(:activity).permit(:name, :length, :description)# permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
+    params.require(:activity).permit(:name, :length, :description, :category)# permit(:name, :difficulty, :notes, :martial_art, :form_type, :link, :belt_color)
   
   end
 
