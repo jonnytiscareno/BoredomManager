@@ -3,20 +3,18 @@
 
 ## To do
 
-1. Allow users to customize their profiles 
-   - add username
-   - add dummy users & activities to seed file 
-   - how to use foreign keys? 
-   - joint associations? 
-   - what was the point of @trainer = Trainer.find(params[:id])? 
-   - hyperlink activities
-   - what is the arrow in rails? 
-   - flash successful saving of location
+1. create button to homepage (header)
+1. hyperlink activities? 
+1. add username to profiles
+1. add dummy users & activities to seed file 
+1. flash successful saving of location
 
-1. other
-	- before_action :authenticate_trainer!
+1. misc
+  - before_action :authenticate_trainer!
+  - what was the point of @trainer = Trainer.find(params[:id])? 
+  - what is the arrow in rails? ; what is the @ symbol ding?
 
-1. front end styling - Bootstrap framework? / where to include ess
+1. front end styling - Bootstrap framework? / where to include css
 1. for each unique activity page have option to upload pictures: see paperclip gem (https://www.youtube.com/watch?v=Z5W-Y3aROVE) 
 
 

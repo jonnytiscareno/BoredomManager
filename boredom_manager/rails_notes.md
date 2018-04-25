@@ -20,6 +20,7 @@
 	- Use print statements (put command)
 
 
+
 ## Concepts
 
 ### Models
@@ -33,8 +34,12 @@
 	- **foreign keys:** 
 		- A field in one table that uniquely identifies a row of another
 		- have to be declared between both models
+		- used when there exists a belongs to relatonship; an activity would have a foreign key identifying a user
 		
  	- **validations:** verify certain values are passed in
+
+1. joint associations = relational tables
+	- ....
 1. rails db:reset, db:seed
 1. rails g migration
 
