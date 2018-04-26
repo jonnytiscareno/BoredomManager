@@ -1,11 +1,63 @@
 
+<style>
+* {
+    box-sizing: border-box;
+}
 
-<h2> Specific Activity </h2>
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="header">
+  <h1><%= @chosen_activity.name %> </h1>
+
+</div>
+
+<div class="column">
+    <h2> Info </h2>
+    
+<!-- <p> <%= social_share_button_tag() %> </p> -->
+	<p> <%= @chosen_activity.length %> </p>
+	<p> <%= @chosen_activity.description %> </p>
+
+
+</div>
+
+<div class="column">
+
+<h2>Images</h2>
 <% if @chosen_activity.image %>
 <%= image_tag @chosen_activity.image.url(:medium) %>
 <% end %> 
-<p> <%= @chosen_activity.name %> </p>
-<!-- <p> <%= social_share_button_tag() %> </p> -->
-<p> <%= @chosen_activity.length %> </p>
-<p> <%= @chosen_activity.description %> </p>
 
+</div>
