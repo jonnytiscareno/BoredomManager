@@ -1,11 +1,1 @@
 <h1>Goodbye!</h1>
-<% Location.all.each do |location|%>
-  <li><%= location.user.username if location.user != current_user%> </li>
-  <p>
-    <strong>Address:</strong>
-    <%= location.address %>
-  </p>
-  <p>
-
-  <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{location.latitude}%2C#{location.longitude}" %>
-<% end %>
