@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
-  resources :activities
+
+  resources :activities do
+    resources :reviews, except: [:show, :index]
+  end 
+
   resources :locations
   resources :users
-
+ 
+  get '/activity/:id', to: 'activities#index', as: '/activity/rvw'
+  get '/activities/:id', to: 'activities#index'
   get '/activities/show', to: 'activities#show'
   get '/search', to: 'activities#get'
   patch '/users/:id/update', to: 'users#update', as: '/users/update'

@@ -1,6 +1,8 @@
 class ActivitiesController < ApplicationController
+  before_action :authenticate_user!, except: [:show]
   
   def index
+    @activity = Activity.find(params[:id])
 
   end
 
