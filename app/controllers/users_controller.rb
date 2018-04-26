@@ -5,6 +5,9 @@ class UsersController < ApplicationController
 		render :update
 	end 
 
+	  def show
+  	end
+
 	def update_location
 		# puts params[:user][:location]
 		puts "UPDATING LOCATION"
