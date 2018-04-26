@@ -25,7 +25,7 @@
 1. deploy to heroku
 	- difference between `heroku local`  & `rails server`
 	- free tier enough for what? 
-	- once you push the local changes can check w/ `heroku open`
+	- https://devcenter.heroku.com/articles/getting-started-with-ruby#define-a-procfile
 	- `heroku run rails db:migrate`
 1. hyperlink activities? 
 1. fix social media share bar  

@@ -22,9 +22,11 @@
 
 1. deploying to heroku
 	- `heroku create _name_`
-	- commit the file to git
+	- commit the file to git & then push local changes to heroku 
 	- `git push heroku master`? 
 	- `heroku run rails db:migrate`
+	- `heroku run rails db:seed`
+	- `heroku open`
 
 1. error: `No default language could be detected for this app`
 	- `heroku buildpacks:set heroku/ruby`
