@@ -35,6 +35,8 @@
 		- **remove the postgres gem & replace with `gem 'pg', '~> 0.18'`** 
 		- `bundle install --without production`
 	- **remark** if you're not on master then you have to do: `git push heroku test_heroku:master`
+	- `bundle exec rails app:update:bin`
+	- https://stackoverflow.com/questions/3872586/how-to-delete-migration-files-in-rails-3 
 
 
 ## Concepts

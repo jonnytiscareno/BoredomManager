@@ -11,6 +11,7 @@
 	- [ ] Users can rate and review
 
 <strike> Users can form & join groups </strike> 
+
 <strike> Users can add friends </strike> 
 
 `Feature 2: External interactions`
@@ -28,6 +29,7 @@
 	- https://devcenter.heroku.com/articles/getting-started-with-ruby#define-a-procfile
 	- `heroku run rails db:migrate`
 1. hyperlink activities? 
+1. put account on the right side
 1. fix social media share bar  
 1. add username to profiles
 1. populate seed file to include additional activities & categories in proper format
