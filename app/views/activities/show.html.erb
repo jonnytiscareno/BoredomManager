@@ -115,14 +115,14 @@ tr:hover {background-color:#f5f5f5;}
 			<td> <%= a.length %> </td>
 			<td> <%= a.description %> </td>
 
-			<% if a.user %> 
+			<% if a.user %>
 				<td> <%= a.user.email %> </td>
-			<% else %> 
-				<td> None </td>
+			<% else %>
+				<td> Public </td>
 			<% end %>
       <td> <%= a.category %> </td>
 
-      <td> <%= image_tag a.image.url(:thumb) %> </td>  
+      <td> <%= image_tag(a.image_file_name, :size => "60x60") %></td>
 
 		</tr>
 	  <% end %>

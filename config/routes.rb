@@ -11,6 +11,7 @@ Rails.application.routes.draw do
  
   get '/activity/:id', to: 'activities#index', as: '/activity/rvw'
   get '/user/:id/activities', to: 'activities#my_index', as: 'my_activities'
+  get '/users/friends', to: 'users#friends'
   get '/activities/:id', to: 'activities#index'
   get '/activities/show', to: 'activities#show'
   get '/search', to: 'activities#get'

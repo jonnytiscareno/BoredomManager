@@ -6,8 +6,9 @@ class UsersController < ApplicationController
 	end 
 
 	  def show
-  	end
-
+		end
+	def friends
+  end
 	def update_location
 		# puts params[:user][:location]
 		puts "UPDATING LOCATION"
