@@ -17,4 +17,13 @@
 
 %w(Dipper Mabel Soos GrunkleStan).each do |name|
   User.create(username: name, email: name+"@mysteryshack.com", password: 'password', location: 'Gravity Falls')
-	end
+end
+
+
+[['UC Berkeley', 1], ['Top Dog Berkeley CA', 2],
+ ['Lotus House Berkeley CA', 3], ['Indian Flavors Berkeley CA', 4]].each do |adress, user|
+  Location.create(
+      address: adress,
+      user_id: user,
+      )
+end

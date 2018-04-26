@@ -18,6 +18,8 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(location_params)
     if @location.save
+      @location.user = current_user
+      @location.save
       redirect_to @location, :notice => "Successfully created location."
     else
       render :action => 'new'
@@ -43,6 +45,7 @@ class LocationsController < ApplicationController
     redirect_to locations_url, :notice => "Successfully destroyed location."
   end
   def location_params
-    params.require(:location).permit(:address)
+    params.require(:location).permit(:address, :user)
   end
+
 end
