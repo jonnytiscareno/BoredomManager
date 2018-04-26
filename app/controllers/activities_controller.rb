@@ -5,6 +5,11 @@ class ActivitiesController < ApplicationController
     @activity = Activity.find(params[:id])
   end
 
+  def my_index
+
+    render :my_activities
+  end
+
   def get
       given_time = params[:length].to_i
       start_range = given_time - 10
@@ -39,7 +44,7 @@ class ActivitiesController < ApplicationController
 
     @activity = current_user.activities.build(activity_params)
     if @activity.save
-      redirect_to root_path
+      redirect_to my_activities_path(current_user.id)
     else
       redirect_to new_activity_path
     end
