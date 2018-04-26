@@ -56,7 +56,7 @@
   <%= link_to('Edit registration', edit_user_registration_path) %>
   <%= link_to('My Activities', my_activities_path(current_user.id)) %>
       <%= link_to('My Friends', users_friends_url) %>
-  <%= link_to('Update Profile', users_update_path(current_user), :method=> :patch) %>
+ <!--  <%= link_to('Update Profile', users_update_path(current_user), :method=> :patch) %> -->
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>   
   </div>
 <% else %>

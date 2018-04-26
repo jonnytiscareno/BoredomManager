@@ -3,23 +3,38 @@
 > 
 > https://boredom-manager.herokuapp.com/ 
 
-
 `Feature 1: Basic user functionality`
 
 	- [x] Users can create an account & customize their profiles 
 	- [x] Users can create their own activities and get recommended activities
-	- [ ] Users can rate and review
-
-<strike> Users can form & join groups </strike> 
-
-<strike> Users can add friends </strike> 
+	- [x] Users can rate and review activities
 
 `Feature 2: External interactions`
 
-	- [?] Geolocation: user can view what others are doing at current time / can view where others are located
+	- [x] Geolocation: user can view others nearby and connect with them
+	- [x] Users can share to social media
 	- [x] Users can upload pictures
-	- [x] Users can share whether they completed an activity on fb
 
+## Gems
+
+1. Geocoder: to see nearby friends
+1. Devise: creat users
+1. Paperclip: image uploading
+
+## Relationships
+
+1. User has_many Activities; activity has_many users
+1. Activity has_many reviews; Review belongs_to activity
+1. User has_a location; location belongs_to user
+
+## Models:
+
+1. Activity
+1. User
+1. Review
+1. Location
+
+---
 
 ## To do
 

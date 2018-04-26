@@ -27,6 +27,7 @@
 	- `heroku run rails db:migrate`
 	- `heroku run rails db:seed`
 	- `heroku open`
+	- https://stackoverflow.com/questions/4820549/how-to-empty-db-in-heroku 
 
 1. error: `No default language could be detected for this app`
 	- `heroku buildpacks:set heroku/ruby`
