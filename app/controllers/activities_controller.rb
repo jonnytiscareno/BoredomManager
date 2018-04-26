@@ -3,7 +3,6 @@ class ActivitiesController < ApplicationController
   
   def index
     @activity = Activity.find(params[:id])
-
   end
 
   def get

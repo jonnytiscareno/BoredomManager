@@ -6,12 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-[['Go laser tagging', 60, 'pew'], ['Give someone a compliment', 1, 'nice smile'], 
- ['plant a tree', 25, 'save the earth']].each do |name, len, descrip|
+[['Go laser tagging', 60, 'pew', 'https://buyinghack.com/wp-content/uploads/2018/01/Laser-Tag-Guns.jpg', 'Sports'], ['Give someone a compliment', 1, 'nice smile', 'http://www.teamworkandleadership.com/wp-content/uploads/2017/07/Compliment-Positive-Leadership.jpg', 'Leisure'],
+ ['plant a tree', 25, 'save the earth', 'http://media.beliefnet.com/~/media/photos-with-attribution/nature/smalltreehandenvironmentcreditShuterstockcom.jpg', 'Humanitarian']].each do |name, len, descrip, url, categ|
   Activity.create(
     name: name,
     length: len,
     description: descrip,
+    image_file_name: url,
+    category: categ
   )
 	end 
 
