@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :users
  
   get '/activity/:id', to: 'activities#index', as: '/activity/rvw'
+  get '/user/:id/activities', to: 'activities#my_index', as: 'my_activities'
   get '/activities/:id', to: 'activities#index'
   get '/activities/show', to: 'activities#show'
   get '/search', to: 'activities#get'

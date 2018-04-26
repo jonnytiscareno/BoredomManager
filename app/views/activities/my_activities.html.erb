@@ -1,0 +1,53 @@
+
+<style>
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    padding: 100px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:hover {background-color:#f5f5f5;}
+</style>
+
+<table class="center">
+
+<tr>
+	<th> Activity </th>
+	<th> Length (Minutes) </th>
+	<th> Description </th>
+    <th> Category </th>
+    <th> Images </th> 
+
+</tr>
+
+<tbody>
+	<% current_user.activities.each do |a| %>
+		<tr>
+			<td> <%= a.name %> 
+			<td> <%= a.length %> </td>
+			<td> <%= a.description %> </td>
+      		<td> <%= a.category %> </td>
+     		<td> <%= image_tag a.image.url(:thumb) %> </td>  
+
+		</tr>
+	  <% end %>
+</tbody>
+
+</table>
+
+<p> </p>
+
+<button class="hero"><%= link_to "ADD MORE ACTIVITIES", new_activity_path, class: "btn btn-large btn-realto " %></button>
